@@ -1160,22 +1160,30 @@ border: 1px solid #CE1139;
     border-radius: 80px;
 }
 
+.github a:hover {
+    color: #5C6BC0;
+}
+
+.codepen a:hover {
+    color: #26C6DA;
+}
+
+.linkedin a:hover {
+    color: #1976D2;
+}
+
+.stackoverflow a:hover {
+    color: #DD4B39;
+}
+
+.medium a:hover {
+    color: #000;
+}
+
 .twitter a:hover {
     color: #55acee;
 }
 
-.facebook a:hover {
-    color: #3b5998;
-}
-
-.pinterest a:hover {
-    color: #cb2026;
-}
-
-.gplus a:hover {
-    color: #dd4b39;
-}
- 
 
 .form {
     margin: 0 66px 0 30px;
