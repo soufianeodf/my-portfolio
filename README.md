@@ -10,6 +10,8 @@ Personal portfolio. Made with Vanilla JS, CSS and HTML.
 1. Clone the repo
 ```
  git clone https://github.com/soufianeodf/soufianeodf.github.io.git
+
+ cd soufianeodf.github.io
 ```
 2. Open home file
 ```
