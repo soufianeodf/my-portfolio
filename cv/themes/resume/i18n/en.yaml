@@ -1,9 +1,9 @@
 - id: awards
-  translation: Awards
+  translation: Certificate
 - id: education
   translation: Education
 - id: experiences
-  translation: Work Experience
+  translation: Education
 - id: information
   translation: Information
 - id: interests
@@ -14,3 +14,5 @@
   translation: Projects
 - id: skills
   translation: Skills
+- id: myExperiences
+  translation: experience
