@@ -128,8 +128,8 @@ a, a:hover, a:active {
 /*---------------*/
 
 figure.effect-oscar {
-	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+	background: -webkit-linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7));
+	background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7));
 }
 
 figure.effect-oscar img {
@@ -2073,3 +2073,60 @@ height: auto;
     opacity: 1;
     visibility: visible;
     }
+
+.odf {
+    display: none;
+}  
+
+@media only screen and (min-width: 800px) {
+   .portfolio_img:hover .odf {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    } 
+} 
+
+@media only screen and (max-width: 800px) {
+    .odf {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .odf > div {
+        padding: 10px;
+        border: 1px solid cornflowerblue;
+        background-color: cornflowerblue;
+        border-radius: 3px;
+    }
+    figure.effect-oscar:hover p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .odf > div {
+        padding: 5px;
+        border: 1px solid cornflowerblue;
+        background-color: cornflowerblue;
+        border-radius: 3px;
+    }
+    figure.effect-oscar p {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color:#fff;
+    }
+}
