@@ -23,4 +23,5 @@ Enjoy :)
 ```
 
 # Contributors
+* [WebThemez](http://webthemez.com)
 * OUDDAF Soufiane
