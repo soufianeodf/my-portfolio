@@ -86,7 +86,13 @@
 	  <div class="row">
 						<div class="col-lg-12 about-us">
 							<div class="row">
-							<div class="col-md-6"> <img class="img-responsive" src="img/about1.jpg" align=""> </div><!-- /.col-md-6 -->
+							<div class="col-md-6"> 
+                                <picture>
+                                    <source media="(min-width: 800px)" srcset="img/about1.jpg">
+                                    <source media="(max-width: 800px)" srcset="img/pointdown.jpg">
+                                    <img src="img/about1.jpg" alt="IfItDoesntMatchAnyMedia">
+                                </picture>    
+                            </div><!-- /.col-md-6 -->
 								<div class="col-md-6">
 									<h3 style="line-height: normal; letter-spacing: 0.3px;">I design and code beautifully simple things, and I love what I do.</h3><br/>
 									<div style="line-height: 2;">
