@@ -206,6 +206,16 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 38px;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    margin: 0px 0 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 h2 {
     font-size: 38px;
     color: #222222;
@@ -403,6 +413,21 @@ p {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     line-height: 70px;
+}
+
+.top_left_cont h1 {
+    font-size: 40px;
+    color: #FFF;
+    margin: 0 0 26px 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 70px;
+}
+
+.top_left_cont h1 strong {
+    font-weight: 700;
+	
+    color: #FFE800;
 }
 
 .top_left_cont h2 strong {
