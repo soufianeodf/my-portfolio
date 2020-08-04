@@ -2129,4 +2129,7 @@ height: auto;
         transform: scale(1);
         color:#fff;
     }
+    figure.effect-oscar img {
+	   opacity: 0.4;
+    }
 }
