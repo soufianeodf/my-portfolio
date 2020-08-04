@@ -415,11 +415,24 @@ p {
     line-height: 70px;
 }
 
-.top_left_cont h1 {
-font-size: 25px;
-color: #FFF;
-line-height: 39px;
-margin: 0 0 9px 0;
+@media only screen and (min-width: 800px) {
+    .top_left_cont h1 {
+        font-size: 40px;
+        color: #FFF;
+        margin: 0 0 26px 0;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .top_left_cont h1 {
+        font-size: 25px;
+        color: #FFF;
+        line-height: 39px;
+        margin: 0 0 9px 0;
+    }
 }
 
 .top_left_cont h1 strong {
