@@ -10,3 +10,5 @@ Sentry.init({
   // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
 });
+
+console.log("this is a test from index.js file.");
