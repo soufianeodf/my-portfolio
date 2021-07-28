@@ -1,0 +1,23 @@
+{
+  "name": "soufianeodf.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio. Made with Vanilla JS, CSS and HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soufianeodf/soufianeodf.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soufianeodf/soufianeodf.github.io/issues"
+  },
+  "homepage": "https://github.com/soufianeodf/soufianeodf.github.io#readme",
+  "dependencies": {
+    "@sentry/browser": "^6.10.0",
+    "@sentry/tracing": "^6.10.0"
+  }
+}
