@@ -29,8 +29,23 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <script type="module" src="./index.js"></script>
-  <script>console.log("this is a test")</script>
+  <script type="module">
+    import * as Sentry from "@sentry/browser";
+    import { Integrations } from "@sentry/tracing";
+
+    Sentry.init({
+      dsn: "https://232b15ba83ec409b8605e3ecbd0a0e6c@o933720.ingest.sentry.io/5883260",
+      integrations: [new Integrations.BrowserTracing()],
+
+      // Set tracesSampleRate to 1.0 to capture 100%
+      // of transactions for performance monitoring.
+      // We recommend adjusting this value in production
+      tracesSampleRate: 1.0,
+    });
+
+    console.log("this is a test from index.js file.");
+  </script>
+  <script>console.log("this another test")</script>
   <meta charset="utf-8">
   <meta name="description" content="Soufiane OUDDAF, Full Stack Web and Mobile App Developer. You can checkout Some of my greatest and latest projects.">
   <meta name="viewport" content="width=device-width, maximum-scale=1">
