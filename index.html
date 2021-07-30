@@ -1,6 +1,28 @@
 <!doctype html>
 <html>
 <head>
+    <!-- sentry.io -->
+    <script src="https://browser.sentry-cdn.com/6.10.0/bundle.min.js"
+            integrity="sha384-nsIkfmMh0uiqg+AwegHcT1SMiPNWnhZmjFDwTshLTxur6ZPNaGT8vwT+vHwI5Jag"
+            crossorigin="anonymous">
+    </script>
+    <script
+            src="https://browser.sentry-cdn.com/6.10.0/bundle.tracing.min.js"
+            integrity="sha384-WPWd3xprDfTeciiueRO3yyPDiTpeh3M238axk2b+A0TuRmqebVE3hLm3ALEnnXtU"
+            crossorigin="anonymous"
+    ></script>
+    <script>
+        Sentry.init({
+            dsn: "https://examplePublicKey@o0.ingest.sentry.io/0",
+            // this assumes your build process sets "npm_package_version" in the env
+            release: "javascript@" + process.env.npm_package_version,
+            integrations: [new Sentry.Integrations.BrowserTracing()],
+
+            // We recommend adjusting this value in production, or using tracesSampler
+            // for finer control
+            tracesSampleRate: 1.0,
+        });
+    </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174241990-1"></script>
   <script>
@@ -28,28 +50,6 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-  <!-- sentry.io -->
-  <script src="https://browser.sentry-cdn.com/6.10.0/bundle.min.js" 
-  integrity="sha384-nsIkfmMh0uiqg+AwegHcT1SMiPNWnhZmjFDwTshLTxur6ZPNaGT8vwT+vHwI5Jag" 
-  crossorigin="anonymous">
-  </script>
-  <script
-    src="https://browser.sentry-cdn.com/6.10.0/bundle.tracing.min.js"
-    integrity="sha384-WPWd3xprDfTeciiueRO3yyPDiTpeh3M238axk2b+A0TuRmqebVE3hLm3ALEnnXtU"
-    crossorigin="anonymous"
-  ></script>
-  <script>
-    Sentry.init({
-    dsn: "https://examplePublicKey@o0.ingest.sentry.io/0",
-    // this assumes your build process sets "npm_package_version" in the env
-    release: "javascript@" + process.env.npm_package_version,
-    integrations: [new Sentry.Integrations.BrowserTracing()],
-
-    // We recommend adjusting this value in production, or using tracesSampler
-    // for finer control
-    tracesSampleRate: 1.0,
-  });
   </script>
   <meta charset="utf-8">
   <meta name="description" content="Soufiane OUDDAF, Full Stack Web and Mobile App Developer. You can checkout Some of my greatest and latest projects.">
@@ -85,7 +85,7 @@
 
                 <div class="underline"></div>             
               <a href="#aboutUs" class="read_more2">Who Am I</a> </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -476,7 +476,9 @@
   </div>
 </footer>
 
-<script>myUndefinedFunction()</script>
+<script src="//localhost:8290/divolte.js" defer async></script>
+<script src="data_collector.js"></script>
+
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
