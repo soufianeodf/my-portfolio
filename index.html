@@ -31,31 +31,7 @@
   </script>
     <!-- sentry.io -->
     <script src="js/sentry.js" type="text/javascript"></script>
-    <!-- Quantcast Tag -->
-    <script type="text/javascript">
-        window._qevents = window._qevents || [];
 
-        (function() {
-            var elem = document.createElement('script');
-            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-            elem.async = true;
-            elem.type = "text/javascript";
-            var scpt = document.getElementsByTagName('script')[0];
-            scpt.parentNode.insertBefore(elem, scpt);
-        })();
-
-        window._qevents.push({
-            qacct:"p-eK0JWC_St8TQp",
-            uid:"__INSERT_EMAIL_HERE__"
-        });
-    </script>
-
-    <noscript>
-        <div style="display:none;">
-            <img src="//pixel.quantserve.com/pixel/p-eK0JWC_St8TQp.gif" border="0" height="1" width="1" alt="Quantcast"/>
-        </div>
-    </noscript>
-    <!-- End Quantcast tag -->
   <meta charset="utf-8">
   <meta name="description" content="Soufiane OUDDAF, Full Stack Web and Mobile App Developer. You can checkout Some of my greatest and latest projects.">
   <meta name="viewport" content="width=device-width, maximum-scale=1">
@@ -480,6 +456,32 @@
       <div class="footer_bottom"><span><script> var CurrentYear = new Date().getFullYear(); document.write(CurrentYear) </script> &copy; All right reserved. Site by <a href="http://webthemez.com/free-bootstrap-templates/" target="_blank">WebThemez</a> && <a href="https://github.com/soufianeodf" target="_blank">Soufiane OUDDAF</a> </span> </div>
   </div>
 </footer>
+	
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+window._qevents = window._qevents || [];
+
+(function() {
+    var elem = document.createElement('script');
+    elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+    elem.async = true;
+    elem.type = "text/javascript";
+    var scpt = document.getElementsByTagName('script')[0];
+    scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+window._qevents.push({
+    qacct:"p-eK0JWC_St8TQp",
+    uid:"__INSERT_EMAIL_HERE__"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+    <img src="//pixel.quantserve.com/pixel/p-eK0JWC_St8TQp.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
 
 <script>myUndefinedFunction()</script>
 <script src="//localhost:8290/divolte.js" defer async></script>
