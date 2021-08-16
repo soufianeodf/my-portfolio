@@ -11,6 +11,15 @@ window.addEventListener("load", function(){
         navigator_user_agent: browserInfo.navigator_user_agent,
         os_name: osInfo.os_name,
     });
+
+    console.log(`
+        browser_name: ${browserInfo.browser_name}
+        full_version: ${browserInfo.full_version}
+        major_version: ${browserInfo.major_version}
+        navigator_app_name: ${browserInfo.navigator_app_name}
+        navigator_user_agent: ${browserInfo.navigator_user_agent}
+        os_name: ${osInfo.os_name}
+    `);
 });
 
 function detect_browser_info() {
