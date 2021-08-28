@@ -2,20 +2,28 @@
   "name": "soufianeodf.github.io",
   "version": "1.0.0",
   "description": "Personal portfolio. Made with Vanilla JS, CSS and HTML.",
-  "main": "index.js",
+  "main": "data_collector.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cleanup": "rm -rf .cache dist",
+    "dev": "npm run cleanup && parcel ./index.html",
+    "build": "parcel build index.html",
+    "deploy": "npm run cleanup && npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soufianeodf/soufianeodf.github.io.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/soufianeodf/soufianeodf.github.io/issues"
   },
-  "homepage": "https://github.com/soufianeodf/soufianeodf.github.io#readme",
+  "homepage": "https://soufianeodf.github.io/",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5"
+  },
   "dependencies": {
     "@sentry/browser": "^6.10.0",
     "@sentry/tracing": "^6.10.0"
