@@ -21,7 +21,7 @@
   },
   "homepage": "https://soufianeodf.github.io/",
   "devDependencies": {
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^5.0.0",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
